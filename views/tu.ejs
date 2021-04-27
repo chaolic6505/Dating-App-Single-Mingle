@@ -1,0 +1,499 @@
+<div
+	class="card mt-3 mb-3 rounded-top dashboard-header d-flex justify-content-center"
+>
+	<div class="card-header d-flex align-items-center rounded-top">
+		<svg
+			class=""
+			width="20"
+			height="30"
+			viewBox="0 0 33 30"
+			onclick="sideBarMove(1)"
+			fill="none"
+			xmlns="http://www.w3.org/2000/svg"
+		>
+			<path
+				d="M0 13.1091H33V17.2111H0V13.1091ZM0 0.802979H33V4.90502H0V0.802979ZM0 25.4152H33V29.5173H0V25.4152Z"
+				fill="black"
+				fill-opacity="0.5"
+			/>
+		</svg>
+		<div class="sidebar-menu">
+			<div class="sidebar-wrapper">
+				<div class="sidebar-top">
+					<svg
+						class="button-close mr-0"
+						onclick="sideBarMove(0)"
+						width="50"
+						height="36"
+						viewBox="0 0 36 36"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M28.5 9.615L26.385 7.5L18 15.885L9.615 7.5L7.5 9.615L15.885 18L7.5 26.385L9.615 28.5L18 20.115L26.385 28.5L28.5 26.385L20.115 18L28.5 9.615Z"
+							fill="black"
+							fill-opacity="0.5"
+						/>
+					</svg>
+
+					<svg
+						class="logo-single"
+						width="434"
+						height="90"
+						viewBox="0 0 434 90"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M21.6 72.72C18.24 72.72 15.216 72.312 12.528 71.496C9.84 70.632 7.272 69.144 4.824 67.032C4.2 66.504 3.72 65.904 3.384 65.232C3.048 64.56 2.88 63.888 2.88 63.216C2.88 62.112 3.264 61.152 4.032 60.336C4.848 59.472 5.856 59.04 7.056 59.04C7.968 59.04 8.784 59.328 9.504 59.904C11.328 61.392 13.128 62.52 14.904 63.288C16.728 64.056 18.96 64.44 21.6 64.44C23.376 64.44 25.008 64.176 26.496 63.648C27.984 63.072 29.184 62.328 30.096 61.416C31.008 60.456 31.464 59.376 31.464 58.176C31.464 56.736 31.032 55.512 30.168 54.504C29.304 53.496 27.984 52.656 26.208 51.984C24.432 51.264 22.176 50.712 19.44 50.328C16.848 49.944 14.568 49.368 12.6 48.6C10.632 47.784 8.976 46.776 7.632 45.576C6.336 44.328 5.352 42.888 4.68 41.256C4.008 39.576 3.672 37.704 3.672 35.64C3.672 32.52 4.464 29.856 6.048 27.648C7.68 25.44 9.864 23.76 12.6 22.608C15.336 21.456 18.36 20.88 21.672 20.88C24.792 20.88 27.672 21.36 30.312 22.32C33 23.232 35.184 24.408 36.864 25.848C38.256 26.952 38.952 28.224 38.952 29.664C38.952 30.72 38.544 31.68 37.728 32.544C36.912 33.408 35.952 33.84 34.848 33.84C34.128 33.84 33.48 33.624 32.904 33.192C32.136 32.52 31.104 31.896 29.808 31.32C28.512 30.696 27.144 30.192 25.704 29.808C24.264 29.376 22.92 29.16 21.672 29.16C19.608 29.16 17.856 29.424 16.416 29.952C15.024 30.48 13.968 31.2 13.248 32.112C12.528 33.024 12.168 34.08 12.168 35.28C12.168 36.72 12.576 37.92 13.392 38.88C14.256 39.792 15.48 40.536 17.064 41.112C18.648 41.64 20.544 42.12 22.752 42.552C25.632 43.08 28.152 43.704 30.312 44.424C32.52 45.144 34.344 46.08 35.784 47.232C37.224 48.336 38.304 49.752 39.024 51.48C39.744 53.16 40.104 55.224 40.104 57.672C40.104 60.792 39.24 63.48 37.512 65.736C35.784 67.992 33.504 69.72 30.672 70.92C27.888 72.12 24.864 72.72 21.6 72.72ZM55.7769 67.608C55.7769 68.856 55.3689 69.912 54.5529 70.776C53.7369 71.592 52.7049 72 51.4569 72C50.2089 72 49.1769 71.592 48.3609 70.776C47.5449 69.912 47.1369 68.856 47.1369 67.608V37.872C47.1369 36.624 47.5449 35.592 48.3609 34.776C49.1769 33.912 50.2089 33.48 51.4569 33.48C52.7049 33.48 53.7369 33.912 54.5529 34.776C55.3689 35.592 55.7769 36.624 55.7769 37.872V67.608ZM51.3849 28.8C49.7529 28.8 48.6009 28.536 47.9289 28.008C47.2569 27.48 46.9209 26.544 46.9209 25.2V23.832C46.9209 22.44 47.2809 21.504 48.0009 21.024C48.7689 20.496 49.9209 20.232 51.4569 20.232C53.1369 20.232 54.3129 20.496 54.9849 21.024C55.6569 21.552 55.9929 22.488 55.9929 23.832V25.2C55.9929 26.592 55.6329 27.552 54.9129 28.08C54.1929 28.56 53.0169 28.8 51.3849 28.8ZM85.2486 32.76C88.8006 32.76 91.4886 33.504 93.3126 34.992C95.1846 36.48 96.4566 38.472 97.1286 40.968C97.8486 43.416 98.2086 46.152 98.2086 49.176V67.608C98.2086 68.856 97.8006 69.912 96.9846 70.776C96.1686 71.592 95.1366 72 93.8886 72C92.6406 72 91.6086 71.592 90.7926 70.776C89.9766 69.912 89.5686 68.856 89.5686 67.608V49.176C89.5686 47.592 89.3526 46.176 88.9206 44.928C88.5366 43.632 87.8166 42.6 86.7606 41.832C85.7046 41.064 84.1926 40.68 82.2246 40.68C80.3046 40.68 78.6726 41.064 77.3286 41.832C76.0326 42.6 75.0246 43.632 74.3046 44.928C73.6326 46.176 73.2966 47.592 73.2966 49.176V67.608C73.2966 68.856 72.8886 69.912 72.0726 70.776C71.2566 71.592 70.2246 72 68.9766 72C67.7286 72 66.6966 71.592 65.8806 70.776C65.0646 69.912 64.6566 68.856 64.6566 67.608V37.872C64.6566 36.624 65.0646 35.592 65.8806 34.776C66.6966 33.912 67.7286 33.48 68.9766 33.48C70.2246 33.48 71.2566 33.912 72.0726 34.776C72.8886 35.592 73.2966 36.624 73.2966 37.872V40.968L72.2166 40.752C72.6486 39.936 73.2726 39.072 74.0886 38.16C74.9046 37.2 75.8646 36.312 76.9686 35.496C78.0726 34.68 79.3206 34.032 80.7126 33.552C82.1046 33.024 83.6166 32.76 85.2486 32.76ZM123.171 32.76C125.187 32.76 127.035 33.072 128.715 33.696C130.395 34.32 131.835 35.112 133.035 36.072C134.283 37.032 135.243 38.016 135.915 39.024C136.635 39.984 136.995 40.8 136.995 41.472L135.123 42.408V37.152C135.123 35.904 135.531 34.872 136.347 34.056C137.163 33.192 138.195 32.76 139.443 32.76C140.691 32.76 141.723 33.168 142.539 33.984C143.355 34.8 143.763 35.856 143.763 37.152V69.192C143.763 73.368 142.851 76.704 141.027 79.2C139.251 81.744 136.899 83.568 133.971 84.672C131.043 85.824 127.899 86.4 124.539 86.4C123.579 86.4 122.331 86.28 120.795 86.04C119.259 85.8 117.795 85.512 116.403 85.176C115.011 84.84 113.955 84.528 113.235 84.24C111.795 83.616 110.787 82.824 110.211 81.864C109.683 80.952 109.587 79.968 109.923 78.912C110.355 77.52 111.051 76.56 112.011 76.032C112.971 75.552 113.979 75.504 115.035 75.888C115.515 76.032 116.307 76.32 117.411 76.752C118.515 77.184 119.715 77.568 121.011 77.904C122.355 78.288 123.531 78.48 124.539 78.48C128.139 78.48 130.803 77.76 132.531 76.32C134.259 74.88 135.123 72.888 135.123 70.344V64.08L135.987 64.728C135.987 65.352 135.651 66.12 134.979 67.032C134.355 67.896 133.467 68.76 132.315 69.624C131.211 70.488 129.891 71.232 128.355 71.856C126.819 72.432 125.187 72.72 123.459 72.72C120.051 72.72 116.979 71.88 114.243 70.2C111.507 68.472 109.347 66.12 107.763 63.144C106.179 60.12 105.387 56.664 105.387 52.776C105.387 48.84 106.179 45.384 107.763 42.408C109.347 39.384 111.483 37.032 114.171 35.352C116.859 33.624 119.859 32.76 123.171 32.76ZM124.539 40.68C122.379 40.68 120.483 41.208 118.851 42.264C117.219 43.32 115.947 44.76 115.035 46.584C114.123 48.408 113.667 50.472 113.667 52.776C113.667 55.032 114.123 57.072 115.035 58.896C115.947 60.72 117.219 62.16 118.851 63.216C120.483 64.272 122.379 64.8 124.539 64.8C126.747 64.8 128.667 64.272 130.299 63.216C131.931 62.16 133.203 60.72 134.115 58.896C135.027 57.072 135.483 55.032 135.483 52.776C135.483 50.472 135.027 48.408 134.115 46.584C133.203 44.76 131.931 43.32 130.299 42.264C128.667 41.208 126.747 40.68 124.539 40.68ZM162.47 67.608C162.47 68.856 162.038 69.912 161.174 70.776C160.358 71.592 159.326 72 158.078 72C156.878 72 155.87 71.592 155.054 70.776C154.238 69.912 153.83 68.856 153.83 67.608V23.112C153.83 21.864 154.238 20.832 155.054 20.016C155.918 19.152 156.974 18.72 158.222 18.72C159.47 18.72 160.478 19.152 161.246 20.016C162.062 20.832 162.47 21.864 162.47 23.112V67.608ZM189.597 72.72C185.517 72.72 181.965 71.88 178.941 70.2C175.965 68.472 173.661 66.144 172.029 63.216C170.445 60.288 169.653 56.976 169.653 53.28C169.653 48.96 170.517 45.288 172.245 42.264C174.021 39.192 176.325 36.84 179.157 35.208C181.989 33.576 184.989 32.76 188.157 32.76C190.605 32.76 192.909 33.264 195.069 34.272C197.277 35.28 199.221 36.672 200.901 38.448C202.581 40.176 203.901 42.192 204.861 44.496C205.869 46.8 206.373 49.248 206.373 51.84C206.325 52.992 205.869 53.928 205.005 54.648C204.141 55.368 203.133 55.728 201.981 55.728H174.477L172.317 48.528H198.741L197.157 49.968V48.024C197.061 46.632 196.557 45.384 195.645 44.28C194.781 43.176 193.677 42.312 192.333 41.688C191.037 41.016 189.645 40.68 188.157 40.68C186.717 40.68 185.373 40.872 184.125 41.256C182.877 41.64 181.797 42.288 180.885 43.2C179.973 44.112 179.253 45.336 178.725 46.872C178.197 48.408 177.933 50.352 177.933 52.704C177.933 55.296 178.461 57.504 179.517 59.328C180.621 61.104 182.013 62.472 183.693 63.432C185.421 64.344 187.245 64.8 189.165 64.8C190.941 64.8 192.357 64.656 193.413 64.368C194.469 64.08 195.309 63.744 195.933 63.36C196.605 62.928 197.205 62.568 197.733 62.28C198.597 61.848 199.413 61.632 200.181 61.632C201.237 61.632 202.101 61.992 202.773 62.712C203.493 63.432 203.853 64.272 203.853 65.232C203.853 66.528 203.181 67.704 201.837 68.76C200.589 69.816 198.837 70.752 196.581 71.568C194.325 72.336 191.997 72.72 189.597 72.72Z"
+							fill="#646464"
+						/>
+						<path
+							d="M218.834 21.528C219.506 21.528 220.202 21.72 220.922 22.104C221.69 22.44 222.266 22.896 222.65 23.472L240.146 50.4L236.546 50.256L254.474 23.472C255.386 22.176 256.562 21.528 258.002 21.528C259.154 21.528 260.186 21.936 261.098 22.752C262.01 23.568 262.466 24.624 262.466 25.92V67.608C262.466 68.856 262.058 69.912 261.242 70.776C260.426 71.592 259.346 72 258.002 72C256.658 72 255.554 71.592 254.69 70.776C253.874 69.912 253.466 68.856 253.466 67.608V33.696L256.274 34.344L241.586 56.736C241.154 57.264 240.602 57.72 239.93 58.104C239.306 58.488 238.658 58.656 237.986 58.608C237.362 58.656 236.714 58.488 236.042 58.104C235.418 57.72 234.89 57.264 234.458 56.736L220.706 34.992L222.578 31.176V67.608C222.578 68.856 222.194 69.912 221.426 70.776C220.658 71.592 219.65 72 218.402 72C217.202 72 216.218 71.592 215.45 70.776C214.682 69.912 214.298 68.856 214.298 67.608V25.92C214.298 24.72 214.73 23.688 215.594 22.824C216.506 21.96 217.586 21.528 218.834 21.528ZM280.707 67.608C280.707 68.856 280.299 69.912 279.483 70.776C278.667 71.592 277.635 72 276.387 72C275.139 72 274.107 71.592 273.291 70.776C272.475 69.912 272.067 68.856 272.067 67.608V37.872C272.067 36.624 272.475 35.592 273.291 34.776C274.107 33.912 275.139 33.48 276.387 33.48C277.635 33.48 278.667 33.912 279.483 34.776C280.299 35.592 280.707 36.624 280.707 37.872V67.608ZM276.315 28.8C274.683 28.8 273.531 28.536 272.859 28.008C272.187 27.48 271.851 26.544 271.851 25.2V23.832C271.851 22.44 272.211 21.504 272.931 21.024C273.699 20.496 274.851 20.232 276.387 20.232C278.067 20.232 279.243 20.496 279.915 21.024C280.587 21.552 280.923 22.488 280.923 23.832V25.2C280.923 26.592 280.563 27.552 279.843 28.08C279.123 28.56 277.947 28.8 276.315 28.8ZM310.178 32.76C313.73 32.76 316.418 33.504 318.242 34.992C320.114 36.48 321.386 38.472 322.058 40.968C322.778 43.416 323.138 46.152 323.138 49.176V67.608C323.138 68.856 322.73 69.912 321.914 70.776C321.098 71.592 320.066 72 318.818 72C317.57 72 316.538 71.592 315.722 70.776C314.906 69.912 314.498 68.856 314.498 67.608V49.176C314.498 47.592 314.282 46.176 313.85 44.928C313.466 43.632 312.746 42.6 311.69 41.832C310.634 41.064 309.122 40.68 307.154 40.68C305.234 40.68 303.602 41.064 302.258 41.832C300.962 42.6 299.954 43.632 299.234 44.928C298.562 46.176 298.226 47.592 298.226 49.176V67.608C298.226 68.856 297.818 69.912 297.002 70.776C296.186 71.592 295.154 72 293.906 72C292.658 72 291.626 71.592 290.81 70.776C289.994 69.912 289.586 68.856 289.586 67.608V37.872C289.586 36.624 289.994 35.592 290.81 34.776C291.626 33.912 292.658 33.48 293.906 33.48C295.154 33.48 296.186 33.912 297.002 34.776C297.818 35.592 298.226 36.624 298.226 37.872V40.968L297.146 40.752C297.578 39.936 298.202 39.072 299.018 38.16C299.834 37.2 300.794 36.312 301.898 35.496C303.002 34.68 304.25 34.032 305.642 33.552C307.034 33.024 308.546 32.76 310.178 32.76ZM348.101 32.76C350.117 32.76 351.965 33.072 353.645 33.696C355.325 34.32 356.765 35.112 357.965 36.072C359.213 37.032 360.173 38.016 360.845 39.024C361.565 39.984 361.925 40.8 361.925 41.472L360.053 42.408V37.152C360.053 35.904 360.461 34.872 361.277 34.056C362.093 33.192 363.125 32.76 364.373 32.76C365.621 32.76 366.653 33.168 367.469 33.984C368.285 34.8 368.693 35.856 368.693 37.152V69.192C368.693 73.368 367.781 76.704 365.957 79.2C364.181 81.744 361.829 83.568 358.901 84.672C355.973 85.824 352.829 86.4 349.469 86.4C348.509 86.4 347.261 86.28 345.725 86.04C344.189 85.8 342.725 85.512 341.333 85.176C339.941 84.84 338.885 84.528 338.165 84.24C336.725 83.616 335.717 82.824 335.141 81.864C334.613 80.952 334.517 79.968 334.853 78.912C335.285 77.52 335.981 76.56 336.941 76.032C337.901 75.552 338.909 75.504 339.965 75.888C340.445 76.032 341.237 76.32 342.341 76.752C343.445 77.184 344.645 77.568 345.941 77.904C347.285 78.288 348.461 78.48 349.469 78.48C353.069 78.48 355.733 77.76 357.461 76.32C359.189 74.88 360.053 72.888 360.053 70.344V64.08L360.917 64.728C360.917 65.352 360.581 66.12 359.909 67.032C359.285 67.896 358.397 68.76 357.245 69.624C356.141 70.488 354.821 71.232 353.285 71.856C351.749 72.432 350.117 72.72 348.389 72.72C344.981 72.72 341.909 71.88 339.173 70.2C336.437 68.472 334.277 66.12 332.693 63.144C331.109 60.12 330.317 56.664 330.317 52.776C330.317 48.84 331.109 45.384 332.693 42.408C334.277 39.384 336.413 37.032 339.101 35.352C341.789 33.624 344.789 32.76 348.101 32.76ZM349.469 40.68C347.309 40.68 345.413 41.208 343.781 42.264C342.149 43.32 340.877 44.76 339.965 46.584C339.053 48.408 338.597 50.472 338.597 52.776C338.597 55.032 339.053 57.072 339.965 58.896C340.877 60.72 342.149 62.16 343.781 63.216C345.413 64.272 347.309 64.8 349.469 64.8C351.677 64.8 353.597 64.272 355.229 63.216C356.861 62.16 358.133 60.72 359.045 58.896C359.957 57.072 360.413 55.032 360.413 52.776C360.413 50.472 359.957 48.408 359.045 46.584C358.133 44.76 356.861 43.32 355.229 42.264C353.597 41.208 351.677 40.68 349.469 40.68ZM387.399 67.608C387.399 68.856 386.967 69.912 386.103 70.776C385.287 71.592 384.255 72 383.007 72C381.807 72 380.799 71.592 379.983 70.776C379.167 69.912 378.759 68.856 378.759 67.608V23.112C378.759 21.864 379.167 20.832 379.983 20.016C380.847 19.152 381.903 18.72 383.151 18.72C384.399 18.72 385.407 19.152 386.175 20.016C386.991 20.832 387.399 21.864 387.399 23.112V67.608ZM414.527 72.72C410.447 72.72 406.895 71.88 403.871 70.2C400.895 68.472 398.591 66.144 396.959 63.216C395.375 60.288 394.583 56.976 394.583 53.28C394.583 48.96 395.447 45.288 397.175 42.264C398.951 39.192 401.255 36.84 404.087 35.208C406.919 33.576 409.919 32.76 413.087 32.76C415.535 32.76 417.839 33.264 419.999 34.272C422.207 35.28 424.151 36.672 425.831 38.448C427.511 40.176 428.831 42.192 429.791 44.496C430.799 46.8 431.303 49.248 431.303 51.84C431.255 52.992 430.799 53.928 429.935 54.648C429.071 55.368 428.063 55.728 426.911 55.728H399.407L397.247 48.528H423.671L422.087 49.968V48.024C421.991 46.632 421.487 45.384 420.575 44.28C419.711 43.176 418.607 42.312 417.263 41.688C415.967 41.016 414.575 40.68 413.087 40.68C411.647 40.68 410.303 40.872 409.055 41.256C407.807 41.64 406.727 42.288 405.815 43.2C404.903 44.112 404.183 45.336 403.655 46.872C403.127 48.408 402.863 50.352 402.863 52.704C402.863 55.296 403.391 57.504 404.447 59.328C405.551 61.104 406.943 62.472 408.623 63.432C410.351 64.344 412.175 64.8 414.095 64.8C415.871 64.8 417.287 64.656 418.343 64.368C419.399 64.08 420.239 63.744 420.863 63.36C421.535 62.928 422.135 62.568 422.663 62.28C423.527 61.848 424.343 61.632 425.111 61.632C426.167 61.632 427.031 61.992 427.703 62.712C428.423 63.432 428.783 64.272 428.783 65.232C428.783 66.528 428.111 67.704 426.767 68.76C425.519 69.816 423.767 70.752 421.511 71.568C419.255 72.336 416.927 72.72 414.527 72.72Z"
+							fill="#363636"
+						/>
+						<circle cx="272.229" cy="17.2289" r="7.22892" fill="#FF6868" />
+						<circle cx="281.771" cy="17.2289" r="7.22892" fill="#FF6868" />
+						<rect
+							x="267.024"
+							y="22.2473"
+							width="14.4578"
+							height="14.1687"
+							transform="rotate(-45 267.024 22.2473)"
+							fill="#FF6868"
+						/>
+					</svg>
+				</div>
+				<div class="sidebar-content">
+					<div class="sidebar-section-border">
+						<a href="/dashboard"
+							><div class="sidebar-section">
+								Main
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
+										fill="#7C7C7C"
+									/>
+								</svg></div
+						></a>
+					</div>
+
+					<div class="sidebar-section-border">
+						<a href="/setting"
+							><div class="sidebar-section">
+								Settings
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
+										fill="#7C7C7C"
+									/>
+								</svg></div
+						></a>
+					</div>
+					<div class="sidebar-section-border">
+						<a href="/faq"
+							><div class="sidebar-section">
+								FAQ
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
+										fill="#7C7C7C"
+									/>
+								</svg></div
+						></a>
+					</div>
+					<div class="sidebar-section-border">
+						<a href="/pp"
+							><div class="sidebar-section">
+								Privacy Policy
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
+										fill="#7C7C7C"
+									/>
+								</svg></div
+						></a>
+					</div>
+					<div class="sidebar-section-border">
+						<a href="/tu"
+							><div class="sidebar-section">
+								Terms of Uses
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
+										fill="#7C7C7C"
+									/>
+								</svg></div
+						></a>
+					</div>
+					<div class="sidebar-section-border mb-2">
+						<a href="/users/logout"
+							><div class="sidebar-section">
+								Logout
+								<svg
+									width="24"
+									height="24"
+									viewBox="0 0 24 24"
+									fill="none"
+									xmlns="http://www.w3.org/2000/svg"
+								>
+									<path
+										d="M8.59 16.59L13.17 12L8.59 7.41L10 6L16 12L10 18L8.59 16.59Z"
+										fill="#7C7C7C"
+									/>
+								</svg></div
+						></a>
+					</div>
+				</div>
+			</div>
+		</div>
+		<img id="dating-logo" src="../sm.png" class="mx-auto d-block" />
+	</div>
+
+	<div class="card">
+		<div class="card-body pb-0 pt-0">
+			<div class="d-flex justify-content-center p-2">
+				<h3 class="text-primary">OVERVIEW</h3>
+			</div>
+
+			<p class="small">
+				This website is operated by SingleMingle. Throughout the site, the terms “we”,
+				“us” and “our” refer to SingleMingle. SingleMingle offers this website,
+				including all information, tools and services available from this site to you,
+				the user, conditioned upon your acceptance of all terms, conditions, policies
+				and notices stated here.
+			</p>
+			<p class="small">
+				By visiting our site and/ or purchasing something from us, you engage in our
+				“Service” and agree to be bound by the following terms and conditions (“Terms of
+				Service”, “Terms”), including those additional terms and conditions and policies
+				referenced herein and/or available by hyperlink. These Terms of Service apply to
+				all users of the site, including without limitation users who are browsers,
+				vendors, customers, merchants, and/ or contributors of content.
+			</p>
+
+			<p class="small">
+				Please read these Terms of Service carefully before accessing or using our
+				website. By accessing or using any part of the site, you agree to be bound by
+				these Terms of Service. If you do not agree to all the terms and conditions of
+				this agreement, then you may not access the website or use any services. If
+				these Terms of Service are considered an offer, acceptance is expressly limited
+				to these Terms of Service.
+			</p>
+
+			<p class="small">
+				Any new features or tools which are added to the current store shall also be
+				subject to the Terms of Service. You can review the most current version of the
+				Terms of Service at any time on this page. We reserve the right to update,
+				change or replace any part of these Terms of Service by posting updates and/or
+				changes to our website. It is your responsibility to check this page
+				periodically for changes. Your continued use of or access to the website
+				following the posting of any changes constitutes acceptance of those changes.
+			</p>
+
+			<p class="small">
+				Our store is hosted on Shopify Inc. They provide us with the online e-commerce
+				platform that allows us to sell our products and services to you.
+			</p>
+
+			<h3 class="text-primary">GENERAL CONDITIONS</h3>
+
+			<p class="small">
+				We reserve the right to refuse service to anyone for any reason at any time.
+			</p>
+
+			<p class="small">
+				You understand that your content (not including credit card information), may be
+				transferred unencrypted and involve (a) transmissions over various networks; and
+				(b) changes to conform and adapt to technical requirements of connecting
+				networks or devices. Credit card information is always encrypted during transfer
+				over networks.
+			</p>
+
+			<p class="small">
+				You agree not to reproduce, duplicate, copy, sell, resell or exploit any portion
+				of the Service, use of the Service, or access to the Service or any contact on
+				the website through which the service is provided, without express written
+				permission by us.
+			</p>
+
+			<p class="small">
+				The headings used in this agreement are included for convenience only and will
+				not limit or otherwise affect these Terms.
+			</p>
+
+			<h3 class="text-primary">
+				ACCURACY, COMPLETENESS AND TIMELINESS OF INFORMATION
+			</h3>
+
+			<p class="small">
+				We are not responsible if information made available on this site is not
+				accurate, complete or current. The material on this site is provided for general
+				information only and should not be relied upon or used as the sole basis for
+				making decisions without consulting primary, more accurate, more complete or
+				more timely sources of information. Any reliance on the material on this site is
+				at your own risk.
+			</p>
+
+			<p class="small">
+				This site may contain certain historical information. Historical information,
+				necessarily, is not current and is provided for your reference only. We reserve
+				the right to modify the contents of this site at any time, but we have no
+				obligation to update any information on our site. You agree that it is your
+				responsibility to monitor changes to our site.
+			</p>
+
+			<h3 class="text-primary">USER COMMENTS, FEEDBACK AND OTHER SUBMISSIONS</h3>
+
+			<p class="small">
+				If, at our request, you send certain specific submissions (for example contest
+				entries) or without a request from us you send creative ideas, suggestions,
+				proposals, plans, or other materials, whether online, by email, by postal mail,
+				or otherwise (collectively, 'comments'), you agree that we may, at any time,
+				without restriction, edit, copy, publish, distribute, translate and otherwise
+				use in any medium any comments that you forward to us. We are and shall be under
+				no obligation (1) to maintain any comments in confidence; (2) to pay
+				compensation for any comments; or (3) to respond to any comments.
+			</p>
+
+			<p class="small">
+				We may, but have no obligation to, monitor, edit or remove content that we
+				determine in our sole discretion are unlawful, offensive, threatening, libelous,
+				defamatory, pornographic, obscene or otherwise objectionable or violates any
+				party’s intellectual property or these Terms of Service.
+			</p>
+
+			<p class="small">
+				You agree that your comments will not violate any right of any third-party,
+				including copyright, trademark, privacy, personality or other personal or
+				proprietary right. You further agree that your comments will not contain
+				libelous or otherwise unlawful, abusive or obscene material, or contain any
+				computer virus or other malware that could in any way affect the operation of
+				the Service or any related website. You may not use a false e-mail address,
+				pretend to be someone other than yourself, or otherwise mislead us or
+				third-parties as to the origin of any comments. You are solely responsible for
+				any comments you make and their accuracy. We take no responsibility and assume
+				no liability for any comments posted by you or any third-party.
+			</p>
+
+			<h3 class="text-primary">PERSONAL INFORMATION</h3>
+
+			<p class="small">
+				Your submission of personal information through the store is governed by our
+				Privacy Policy.
+			</p>
+
+			<h3 class="text-primary">ERRORS, INACCURACIES AND OMISSIONS</h3>
+
+			<p class="small">
+				We undertake no obligation to update, amend or clarify information in the
+				Service or on any related website, including without limitation, except as
+				required by law. No specified update or refresh date applied in the Service or
+				on any related website, should be taken to indicate that all information in the
+				Service or on any related website has been modified or updated.
+			</p>
+
+			<h3 class="text-primary">PROHIBITED USES</h3>
+
+			<p class="small">
+				In addition to other prohibitions as set forth in the Terms of Service, you are
+				prohibited from using the site or its content:
+			</p>
+
+			<p class="small">
+				(a) for any unlawful purpose; (b) to solicit others to perform or participate in
+				any unlawful acts; (c) to violate any international, federal, provincial or
+				state regulations, rules, laws, or local ordinances; (d) to infringe upon or
+				violate our intellectual property rights or the intellectual property rights of
+				others; (e) to harass, abuse, insult, harm, defame, slander, disparage,
+				intimidate, or discriminate based on gender, sexual orientation, religion,
+				ethnicity, race, age, national origin, or disability; (f) to submit false or
+				misleading information; (g) to upload or transmit viruses or any other type of
+				malicious code that will or may be used in any way that will affect the
+				functionality or operation of the Service or of any related website, other
+				websites, or the Internet; (h) to collect or track the personal information of
+				others; (i) to spam, phish, pharm, pretext, spider, crawl, or scrape; (j) for
+				any obscene or immoral purpose; or (k) to interfere with or circumvent the
+				security features of the Service or any related website, other websites, or the
+				Internet.
+			</p>
+
+			<p class="small">
+				We reserve the right to terminate your use of the Service or any related website
+				for violating any of the prohibited uses.
+			</p>
+
+			<h3 class="text-primary">DISCLAIMER OF WARRANTIES; LIMITATION OF LIABILITY</h3>
+
+			<p class="small">
+				We do not guarantee, represent or warrant that your use of our service will be
+				uninterrupted, timely, secure or error-free.
+			</p>
+
+			<p class="small">
+				We do not warrant that the results that may be obtained from the use of the
+				service will be accurate or reliable.
+			</p>
+
+			<p class="small">
+				You agree that from time to time we may remove the service for indefinite
+				periods of time or cancel the service at any time, without notice to you.
+			</p>
+
+			<p class="small">
+				You expressly agree that your use of, or inability to use, the service is at
+				your sole risk. The service and all products and services delivered to you
+				through the service are (except as expressly stated by us) provided 'as is' and
+				'as available' for your use, without any representation, warranties or
+				conditions of any kind, either express or implied, including all implied
+				warranties or conditions of merchantability, merchantable quality, fitness for a
+				particular purpose, durability, title, and non-infringement.
+			</p>
+
+			<p class="small">
+				In no case shall SingleMingle, our directors, officers, employees, affiliates,
+				agents, contractors, interns, suppliers, service providers or licensors be
+				liable for any injury, loss, claim, or any direct, indirect, incidental,
+				punitive, special, or consequential damages of any kind, including, without
+				limitation lost profits, lost revenue, lost savings, loss of data, replacement
+				costs, or any similar damages, whether based in contract, tort (including
+				negligence), strict liability or otherwise, arising from your use of any of the
+				service or any products procured using the service, or for any other claim
+				related in any way to your use of the service or any product, including, but not
+				limited to, any errors or omissions in any content, or any loss or damage of any
+				kind incurred as a result of the use of the service or any content (or product)
+				posted, transmitted, or otherwise made available via the service, even if
+				advised of their possibility. Because some states or jurisdictions do not allow
+				the exclusion or the limitation of liability for consequential or incidental
+				damages, in such states or jurisdictions, our liability shall be limited to the
+				maximum extent permitted by law.
+			</p>
+
+			<h3 class="text-primary">INDEMNIFICATION</h3>
+
+			<p class="small">
+				You agree to indemnify, defend and hold harmless SingleMingle and our parent,
+				subsidiaries, affiliates, partners, officers, directors, agents, contractors,
+				licensors, service providers, subcontractors, suppliers, interns and employees,
+				harmless from any claim or demand, including reasonable attorneys’ fees, made by
+				any third-party due to or arising out of your breach of these Terms of Service
+				or the documents they incorporate by reference, or your violation of any law or
+				the rights of a third-party.
+			</p>
+
+			<h3 class="text-primary">SEVERABILITY</h3>
+
+			<p class="small">
+				In the event that any provision of these Terms of Service is determined to be
+				unlawful, void or unenforceable, such provision shall nonetheless be enforceable
+				to the fullest extent permitted by applicable law, and the unenforceable portion
+				shall be deemed to be severed from these Terms of Service, such determination
+				shall not affect the validity and enforceability of any other remaining
+				provisions.
+			</p>
+
+			<h3 class="text-primary">TERMINATION</h3>
+
+			<p class="small">
+				The obligations and liabilities of the parties incurred prior to the termination
+				date shall survive the termination of this agreement for all purposes.
+			</p>
+
+			<p class="small">
+				These Terms of Service are effective unless and until terminated by either you
+				or us. You may terminate these Terms of Service at any time by notifying us that
+				you no longer wish to use our Services, or when you cease using our site.
+			</p>
+
+			<p class="small">
+				If in our sole judgment you fail, or we suspect that you have failed, to comply
+				with any term or provision of these Terms of Service, we also may terminate this
+				agreement at any time without notice and you will remain liable for all amounts
+				due up to and including the date of termination; and/or accordingly may deny you
+				access to our Services (or any part thereof).
+			</p>
+
+			<h3 class="text-primary">ENTIRE AGREEMENT</h3>
+
+			<p class="small">
+				The failure of us to exercise or enforce any right or provision of these Terms
+				of Service shall not constitute a waiver of such right or provision.
+			</p>
+
+			<p class="small">
+				These Terms of Service and any policies or operating rules posted by us on this
+				site or in respect to The Service constitutes the entire agreement and
+				understanding between you and us and govern your use of the Service, superseding
+				any prior or contemporaneous agreements, communications and proposals, whether
+				oral or written, between you and us (including, but not limited to, any prior
+				versions of the Terms of Service).
+			</p>
+
+			<p class="small">
+				Any ambiguities in the interpretation of these Terms of Service shall not be
+				construed against the drafting party.
+			</p>
+
+			<h3 class="text-primary">GOVERNING LAW</h3>
+
+			<p class="small">
+				These Terms of Service and any separate agreements whereby we provide you
+				Services shall be governed by and construed in accordance with the laws of 555
+				Seymour St, Vancouver, BC, V6B 3H6, Canada.
+			</p>
+
+			<h3 class="text-primary">CHANGES TO TERMS OF SERVICE</h3>
+
+			<p class="small">
+				You can review the most current version of the Terms of Service at any time at
+				this page.
+			</p>
+
+			<p class="small">
+				We reserve the right, at our sole discretion, to update, change or replace any
+				part of these Terms of Service by posting updates and changes to our website. It
+				is your responsibility to check our website periodically for changes. Your
+				continued use of or access to our website or the Service following the posting
+				of any changes to these Terms of Service constitutes acceptance of those
+				changes.
+			</p>
+
+			<h3 class="text-primary">CONTACT INFORMATION</h3>
+
+			<p class="small mb-4">
+				Questions about the Terms of Service should be sent to us at
+				bcitapp.demos@gmail.com.
+			</p>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,86 @@
+<div class="card mt-5 mb-2 dashboard-header">
+	<div class="card-header">
+		<img id="dating-logo" src="../sm.png" class="mx-auto d-block mb-3 mt-3" />
+	</div>
+
+	<div class="gradientBanner mb-1">
+		<h1 class="gradientHeader mb-1">Welcom Back</h1>
+	</div>
+	<%- include ('./partials/messages') %>
+	<div class="card-body p-1">
+		<form action="/users/login" method="POST" class="">
+			<div class="form-group mt-5 d-flex justify-content-center">
+				<input
+					type="email"
+					id="email"
+					name="email"
+					class="form-control field"
+					placeholder="Enter Email"
+				/>
+			</div>
+			<div class="form-group mt-5 d-flex justify-content-center">
+				<input
+					type="password"
+					id="password"
+					name="password"
+					class="form-control field"
+					placeholder="Enter Password"
+				/>
+			</div>
+			<div class="form-group d-flex justify-content-center mt-5">
+				<button
+					class="btn-signup btn btn-light btn-block button login mt-1 mb-0 height pt-2 pb-2"
+				>
+					Login
+				</button>
+			</div>
+		</form>
+
+		<div class="form-group mt-2">
+			<div class="d-flex justify-content-center mt-4">
+				<a id="forgot-password" class="rainbow" href="/users/register">No Account ?</a>
+			</div>
+
+			<div class="d-flex justify-content-center mt-4">
+				<a href="/" target="_top">
+					<svg
+						class="btn-back mb-2"
+						width="42"
+						height="42"
+						viewBox="0 0 42 37.5"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+						xmlns:xlink="http://www.w3.org/1999/xlink"
+					>
+						<rect
+							x="0.699951"
+							y="0.0999756"
+							width="40.32"
+							height="37.8"
+							fill="url(#pattern0)"
+						/>
+						<defs>
+							<pattern
+								id="pattern0"
+								patternContentUnits="objectBoundingBox"
+								width="1"
+								height="1"
+							>
+								<use
+									xlink:href="#image0"
+									transform="translate(0 -0.0333333) scale(0.01 0.0106667)"
+								/>
+							</pattern>
+							<image
+								id="image0"
+								width="100"
+								height="100"
+								xlink:href="data:image/png;base64,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"
+							/>
+						</defs>
+					</svg>
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

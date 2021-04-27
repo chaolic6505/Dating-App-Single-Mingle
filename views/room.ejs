@@ -1,0 +1,287 @@
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script defer src="/socket.io/socket.io.js"></script>
+
+<style>
+	#message-container div {
+		background-color: #ccc;
+		padding: 10px;
+	}
+
+	#message-container div:nth-child(2n) {
+		background-color: #fff;
+	}
+
+	#send-container {
+		width: 400px;
+		height: 20px;
+	}
+
+	#message-input {
+		border-color: black;
+		border-radius: 30px;
+		width: auto;
+		padding: 10px 30px !important;
+	}
+	
+</style>
+<div
+	class="card mt-1 mb-3 rounded-top dashboard-header d-flex justify-content-center"
+>
+	<div class="card-header d-flex align-items-center rounded-top">
+		<a href="/dashboard" class=""
+			><svg
+				class="btn-back mr-1"
+				width="32"
+				height="32"
+				viewBox="0 0 42 37.5"
+				fill="none"
+				xmlns="http://www.w3.org/2000/svg"
+				xmlns:xlink="http://www.w3.org/1999/xlink"
+			>
+				<rect
+					x="0.699951"
+					y="0.0999756"
+					width="40.32"
+					height="37.8"
+					fill="url(#pattern0)"
+				/>
+				<defs>
+					<pattern
+						id="pattern0"
+						patternContentUnits="objectBoundingBox"
+						width="1"
+						height="1"
+					>
+						<use
+							xlink:href="#image0"
+							transform="translate(0 -0.0333333) scale(0.01 0.0106667)"
+						/>
+					</pattern>
+					<image
+						id="image0"
+						width="100"
+						height="100"
+						xlink:href="data:image/png;base64,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"
+					/>
+				</defs>
+			</svg>
+		</a>
+		<img id="dating-logo" src="../../sm.png" class="mx-auto d-block" />
+		<div class="">
+			<a href="/message">
+				<img id="chat-logo" src="../../chat.png" class="mx-auto d-block" />
+			</a>
+		</div>
+	</div>
+
+	<div id="card">
+		<div
+			id="meessage-parent"
+			class="card-body col-md-12 d-flex flex-column scroller"
+		>
+			<div class="scroller">
+				<div class="d-flex justify-content-end align-items-center">
+					<div class="chatContainer send float-right mr-2">
+						<p class="black"></p>
+						<p class="black">Hi : <%= user.name %></p>
+						<span class="time-left" id="save">3:42 a.m.</span>
+					</div>
+					<img class="circle-img" width="40" height="10" src="<%= user.img.data %>" />
+				</div>
+			</div>
+		
+
+			<div class="scroller">
+				<div class="d-flex align-items-center">
+					<img class="circle-img" src="<%= rooms[roomName]['img'] %>" />
+					<div class="chatContainer recieve ml-2">
+						<p></p>
+						<p><%= roomName %>: How are you ?</p>
+					
+						
+						<span id="save" class="time-left">3:43 a.m.</span>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="card-body d-flex justify-content-around">
+		<div class="mb-1 d-flex justify-content-around">
+			<form id="send-container" class="w-100 d-flex align-items-center">
+				<div class="d-flex">
+					<button type="submit" class="btn-link">
+						<i class="fas fa-plus text-pink mr-3"></i>
+					</button>
+					
+
+					<input
+						id="message-input"
+						type="text"
+						placeholder="Type a message..."
+						class="form-control mr-3"
+						required
+					/>
+					<div class="input-group-append">
+						<button type="submit" class="btn-link">
+							<img src="../send.png" />
+						</button>
+					</div>
+				</div>
+			</form>
+		</div>
+	</div>
+</div>
+
+<script>
+	const socket = io();
+
+	let scroller = document.querySelector('#meessage-parent');
+	let anchor = document.querySelector('#anchor');
+
+	const meessageParent = document.getElementById('meessage-parent');
+
+	const roomContainer = document.getElementById('room-container');
+	const messageForm = document.getElementById('send-container');
+	const messageInput = document.getElementById('message-input');
+
+	if (messageForm != null) {
+		socket.emit(
+			'new-user',
+			'<%= roomName %>',
+			'<%= user.name %>',
+			'<%= user.email %>',
+		);
+
+		messageForm.addEventListener('submit', (e) =>
+		{
+			e.preventDefault();
+			const message = messageInput.value;
+
+			appendSendMessage(`${message} : <%= user.name %>`);
+
+
+			socket.emit(
+				'send-chat-message',
+				'<%= roomName %>',
+				message,
+				'<%= user.email %>',
+			);
+			messageInput.value = '';
+		});
+	}
+
+	socket.on('room-created', (room) => {
+		const roomElement = document.createElement('div');
+		roomElement.innerText = room;
+		const roomLink = document.createElement('a');
+		roomLink.href = `/${room}`;
+		roomLink.innerText = 'join';
+		roomContainer.append(roomElement);
+		roomContainer.append(roomLink);
+	});
+
+	socket.on('chat-message', (data) => {
+		console.log('Received data: ' + data);
+		console.log(`${data.name}`);
+		console.log(`${data.message}`);
+		appendReceivedMessage(`${data.name}: ${data.message}`);
+		count++;
+	});
+
+	socket.on('user-connected', (name) => {
+		console.log(`${name} connected`);
+	});
+
+	socket.on('user-disconnected', (name) => {
+		console.log(`${name} disconnected`);
+	});
+
+	appendSendMessage = (message) => {
+		const userImage = document.createElement('img');
+		const messagesMiddleDiv = document.createElement('div');
+		const messagesAreaSend = document.createElement('div');
+		const messageElementDiv = document.createElement('div');
+		const messageElementSpan = document.createElement('span');
+		const messageElementP1 = document.createElement('p');
+		const messageElementP2 = document.createElement('p');
+
+		userImage.classList.add('circle-img');
+		userImage.setAttribute('src', '<%= user.img.data %>');
+
+
+		messagesMiddleDiv.classList.add('d-flex');
+		messagesMiddleDiv.classList.add('justify-content-end');
+		messagesMiddleDiv.classList.add('align-items-center');
+
+		messagesAreaSend.classList.add('scroller');
+		messageElementDiv.classList.add('chatContainer');
+		messageElementDiv.classList.add('send');
+		messageElementDiv.classList.add('float-right');
+		messageElementDiv.classList.add('mr-2');
+
+		messageElementSpan.classList.add('time-left');
+
+		messageElementP1.classList.add('black');
+		messageElementP2.classList.add('black');
+		messageElementP2.innerHTML = message;
+		messageElementSpan.setAttribute('id', 'save');
+		messageElementSpan.innerHTML = '<%= time %>';
+
+		messageElementDiv.append(messageElementP1);
+		messageElementDiv.append(messageElementP2);
+		messageElementDiv.append(messageElementSpan);
+
+		messagesMiddleDiv.append(messageElementDiv);
+		messagesMiddleDiv.append(userImage);
+
+		messagesAreaSend.append(messagesMiddleDiv);
+
+		scroller.append(messagesAreaSend);
+		//element = document.getElementById("yourDivID");
+		scroller.scrollTop = scroller.scrollHeight;
+	};
+
+	appendReceivedMessage = (message) => {
+
+		const userImage = document.createElement('img');
+		const messagesMiddleDiv = document.createElement('div');
+		const messagesAreaReceive = document.createElement('div');
+		const messageElementDiv = document.createElement('div');
+		const messageElementSpan = document.createElement('span');
+		const messageElementP1 = document.createElement('p');
+		const messageElementP2 = document.createElement('p');
+
+		userImage.classList.add('circle-img');
+		userImage.setAttribute('src', '<%= rooms[roomName]['img'] %>');
+
+		messagesMiddleDiv.classList.add('d-flex');
+		messagesMiddleDiv.classList.add('justify-content-end');
+		messagesMiddleDiv.classList.add('align-items-center');
+
+		messagesAreaReceive.classList.add('scroller');
+		messageElementDiv.classList.add('chatContainer');
+		messageElementDiv.classList.add('recieve');
+		messageElementDiv.classList.add('ml-2');
+		messageElementP2.innerHTML = message;
+
+		messageElementP2.innerHTML = message;
+		messageElementSpan.setAttribute('id', 'save');
+		messageElementSpan.classList.add('time-left');
+		messageElementSpan.innerHTML = '<%= time %>';
+		messageElementDiv.append(messageElementP1);
+		messageElementDiv.append(messageElementP2);
+		messageElementDiv.append(messageElementSpan);
+
+		messagesMiddleDiv.append(userImage);
+		messagesMiddleDiv.append(messageElementDiv);
+
+		messagesAreaReceive.append(messagesMiddleDiv);
+
+		scroller.append(messagesAreaReceive);
+		scroller.scrollTop = scroller.scrollHeight;
+
+		$('#messagesAreaReceive').animate({
+			scrollTop: $('#messagesAreaReceive').prop('scrollHeight'),
+		});
+	};
+</script>
