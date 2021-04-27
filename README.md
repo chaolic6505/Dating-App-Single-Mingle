@@ -42,9 +42,7 @@ aws-sdk": "^2.678.0",
 "passport": "^0.4.1",
 "passport-facebook": "^3.0.0",
 "passport-google-oauth20": "^2.0.0",
-"passport-linkedin-oauth2": "^2.0.0",
 "passport-local": "^1.0.0",
-"passport-spotify": "^1.1.0",
 "path": "^0.12.7",
 "socket.io": "^2.3.0"
 ```
