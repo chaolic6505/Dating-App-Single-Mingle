@@ -63,7 +63,8 @@ A .config folder will need to have the following keys:
 To start the program you will need to go to the program directory and open up your terminal and
 
 1. Type `npm install` to download all the dependencies.
-2. Go to http://localhost:3000 and you will see the app running.
+2. Type `npm start` to start the app.
+3. Go to http://localhost:3000 and you will see the app running.
 
 ## ⛏️ Web Stack <a name = "built_using"></a>
 
